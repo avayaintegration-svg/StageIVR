@@ -1,0 +1,13 @@
+Step 1:- py -m venv .venv OR python -m venv .venv
+
+Step 2:- # On Windows (Command Prompt)
+& {{Add Application Folder path}}.venv/Scripts/Activate.ps1
+Example:- & c:/Dhinesh/NovaSonic/.venv/Scripts/Activate.ps1
+
+Step 3:- 
+pip install -r requirements.txt
+
+Step 4:- uvicorn app:app --reload --port 3000
+
+The above 4 steps required to the first time install the Application.
+next time we are use step2 and step 4 only. not required to step 1 and step 3.

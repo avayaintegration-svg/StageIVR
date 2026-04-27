@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+python-dotenv
+websockets
+mcp[cli]
+aws_sdk_bedrock_runtime
+smithy-aws-core
+psycopg2-binary 
+audioop-lts
+numpy
