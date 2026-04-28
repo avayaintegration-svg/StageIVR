@@ -23,7 +23,7 @@ graph TB
     end 
 
     subgraph Integrations [Database & External System Integrations]
-        DB[(RDS Postgres)]
+        DB[(Onvida)]
         TwilioAPI[Twilio API]
         Onvida[Onvida API]
         Qnxt[Qnxt API]
@@ -35,10 +35,10 @@ graph TB
     CoreApp <-->|Bidirectional Stream| NovaSonic
     NovaSonic <-->|I/O transport| MCP
     
-    %% Connections to Integrations
+    %% Connections to Integrations 
     MCP <--> Integrations
     
     %% Internal Logic flows (Optional: specifically linking tools to APIs)
-    T1 -.-> Qnxt
-    T2 -.-> Onvida
-    T3 -.-> DB
+    T1 -.-> MCP
+    T2 -.-> MCP
+    T3 -.-> MCP
