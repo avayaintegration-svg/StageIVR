@@ -3,8 +3,8 @@ uvicorn[standard]
 python-dotenv
 websockets
 mcp[cli]
-aws_sdk_bedrock_runtime
-smithy-aws-core
+aws_sdk_bedrock_runtime==0.8.0
+smithy-aws-core==0.0.1
 psycopg2-binary 
 audioop-lts
 numpy
